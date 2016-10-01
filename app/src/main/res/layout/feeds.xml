@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:hint="Search"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignRight="@+id/fab"
+        android:layout_alignEnd="@+id/fab">
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:textColor="#ffffff"
+        android:divider="#FFa500"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@mipmap/add"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="41dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:id="@+id/filter"
+        android:layout_above="@+id/listview"
+        android:layout_alignTop="@+id/search"
+        android:layout_marginLeft="11dp"
+        android:src="@mipmap/filter"
+        android:background="#ffa500"
+        android:clickable="true"
+        android:layout_marginBottom="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:id="@+id/profile"
+        android:src="@mipmap/home"
+        android:background="#ffa500"
+        android:clickable="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="7dp"
+        android:layout_above="@+id/listview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/search" />
+
+
+</RelativeLayout>
